@@ -1,0 +1,44 @@
+{
+  "name": "frontend-boilerplate",
+  "version": "1.0.0",
+  "description": "Front-end Boilerplate",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/murillocamargo/Front-end-Boilerplate.git"
+  },
+  "author": "Murillo Camargo <murillo@murillocamargo.com.br>",
+  "license": "MIT",
+  "homepage": "https://github.com/murillocamargo/Front-end-Boilerplate",
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.9",
+    "@babel/preset-env": "^7.18.10",
+    "autoprefixer": "^10.4.8",
+    "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
+    "babel-preset-env": "^1.7.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.20.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-mode": "^1.0.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.1",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.4.16"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "browser-sync": "^2.27.10",
+    "del": "^6.1.1",
+    "lodash.template": ">=4.5.0"
+  }
+}

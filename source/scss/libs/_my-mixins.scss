@@ -1,0 +1,56 @@
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
+
+@mixin border-radius($radius: 5px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+@mixin bgi($file, $repeat: no-repeat) {
+    background-image: url('../images/#{$file}');
+    background-repeat: $repeat;
+}
+
+@mixin list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@mixin list-float {
+    @include clearfix;
+    li {
+        display: inline-block;
+    }
+}
+
+@mixin square($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content
+    }
+}

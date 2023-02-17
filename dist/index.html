@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/frontend.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>by @carlospadrao</title>
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <div class="page-header col-md-12 mt-4">
+                <h1 class="text-center">Gastos da Hunt - Medívia</h1>
+            </div>
+
+            <div class="page-body col-md-12 mt-5">
+                <div class="elite-knight col-md-6">
+                    <ul>
+                        <li><input type="number" name="uh" id="ek-uh" value="">BPs DE UH</li>
+                        <li><input type="number" name="explo" id="ek-explo" value="">BPs DE EXPLOSION</li>
+                        <li><input type="number" name="mf" id="ek-mf" value="">BPs DE MANAFLUID</li>
+                        <li id="calcular-ek"><input type="button" value="Calcular gastos" onclick="totalEK()"></li>
+                    </ul>
+                    <div id="totalGastosEK" onchange="totalEK()">Total de gastos: <span>0</span></div>
+                </div>
+                <div class="royal-paladin col-md-6">
+                    <ul>
+                        <li><input type="number" name="uh" id="rp-sd" value="">BPs DE SD</li>
+                        <li><input type="number" name="explo" id="rp-explo" value="">BPs DE EXPLOSION</li>
+                        <li><input type="number" name="uh" id="rp-uh" value="">BPs DE UH</li>
+                        <li><input type="number" name="mf" id="rp-mf" value="">BPs DE BIG MANAFLUID</li>
+                        <li id="calcular-rp"><input type="button" value="Calcular gastos" onclick="totalEK()"></li>
+                    </ul>
+                    <div id="totalGastosRP" onchange="totalRP()">Total de gastos: <span>0</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="assets/scripts/frontend.min.js"></script>
+</html>
