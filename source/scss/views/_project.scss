@@ -1,5 +1,8 @@
 * { 
     box-sizing: border-box; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.89);
 }
 
 html {
@@ -7,6 +10,7 @@ html {
 }
 
 #main {
+    background: linear-gradient(to bottom right,#003352 0,#00639e 50%,#0093eb 100%);
     .page-header {
         h1 {
             font-size: 40px;
@@ -24,17 +28,22 @@ html {
         
         .elite-knight,
         .royal-paladin {
+            display: flex;
+            justify-content: center;
+
             ul {
                 margin: 0;
                 padding: 0;
                 list-style: none;
 
                 li {
+                    text-transform: uppercase;
                     font-weight: 700;
                     @media (max-width: 575.98px) {
                         font-size: 12px;
                     }
                     input {
+                        color: #000;
                         margin-right: 12px;
                         margin-bottom: 15px;
                     }
