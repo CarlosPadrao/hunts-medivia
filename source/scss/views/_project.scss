@@ -10,7 +10,9 @@ html {
 }
 
 #main {
-    background: linear-gradient(to bottom right,#003352 0,#00639e 50%,#0093eb 100%);
+    background-color: #202123!important;
+    // background: linear-gradient(to bottom right,#003352 0,#00639e 50%,#0093eb 100%);
+
     .page-header {
         h1 {
             font-size: 40px;
@@ -42,12 +44,23 @@ html {
                     @media (max-width: 575.98px) {
                         font-size: 12px;
                     }
+
+                    img {
+                        width: 31px;
+                    }
+
                     input {
                         color: #000;
                         margin-right: 12px;
                         margin-bottom: 15px;
+                        font-size: 17px;
                     }
                 }
+            }
+
+            #totalGastosEK,
+            #totalGastosRP {
+                font-size: 19px;
             }
         }
     }
