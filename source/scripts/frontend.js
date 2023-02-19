@@ -43,7 +43,10 @@ function totalEK() {
     let wasteMF = document.querySelector('#ek-mf').value;
     let wasteHMM = document.querySelector('#ek-hmm').value;
     //
-    gastosEK.innerText = ( (wasteUH * bpUH) + (wasteEXPLO * bpEXPLO) + (wasteHMM * bpHMM) + (wasteMF * bpMF) );
+    gastosEK.innerText = ( 
+            (wasteUH * bpUH) + (wasteEXPLO * bpEXPLO) + 
+            (wasteHMM * bpHMM) + (wasteMF * bpMF)  + ' gps' 
+        );
 }
 
 function totalRP() {
@@ -60,6 +63,6 @@ function totalRP() {
         (wasteSD * bpSD) + (wasteEXPLO * bpEXPLO) + 
         (wasteUH * bpUH) + (wasteBigMF * bpBigMF) + 
         (wasteHuntingBolt * huntingBolt) + (wasteHuntingArrow * huntingArrow) +
-        (wastePiercingArrow * piercingArrow) + (wasteHMM * bpHMM)
+        (wastePiercingArrow * piercingArrow) + (wasteHMM * bpHMM) + ' gps'
     );
 }
