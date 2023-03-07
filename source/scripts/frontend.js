@@ -33,6 +33,7 @@ var bpBigMF = 17000;
 var huntingBolt = 5;
 var huntingArrow = 4; 
 var piercingArrow = 12;
+var smallExplosiveRune = 50;
 
 var gastosEK = document.querySelector('#totalGastosEK span');
 var gastosRP = document.querySelector('#totalGastosRP span');
@@ -58,11 +59,12 @@ function totalRP() {
     let wasteHuntingBolt = document.querySelector('#rp-huntingBolt').value;
     let wasteHuntingArrow = document.querySelector('#rp-huntingArrow').value;
     let wastePiercingArrow = document.querySelector('#rp-piercingArrow').value;
+    let wasteSmallExplosive = document.querySelector('#mage-small-explosive').value;
     //
     gastosRP.innerText = ( 
         (wasteSD * bpSD) + (wasteEXPLO * bpEXPLO) + 
         (wasteUH * bpUH) + (wasteBigMF * bpBigMF) + 
         (wasteHuntingBolt * huntingBolt) + (wasteHuntingArrow * huntingArrow) +
-        (wastePiercingArrow * piercingArrow) + (wasteHMM * bpHMM) + ' gps'
+        (wastePiercingArrow * piercingArrow) + (wasteHMM * bpHMM) + (wasteSmallExplosive * smallExplosiveRune) + ' gps'
     );
 }
